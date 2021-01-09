@@ -33,7 +33,7 @@ class Model:
         return self
 
 model_path = Path(__file__).parent / "model.joblib"
-n_fetaures = load_boston(return_X_y=True)[0].shape[1]
+n_features = load_boston(return_X_y=True)[0].shape[1]
 model = Model(model_path)
 
 def get_model():
